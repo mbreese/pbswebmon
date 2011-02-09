@@ -3,7 +3,6 @@ VERSION=$(shell cat VERSION)
 DESTDIR=
 PREFIX=/var/www
 WEBROOT=/var/www/html
-SVNURL=https://pbswebmon.svn.sourceforge.net/svnroot/pbswebmon
 
 all:
 	$(MAKE) -C src all 
@@ -27,7 +26,7 @@ install:
 	install -m 644 *.css $(DESTDIR)/$(WEBROOT)/pbswebmon
 	install -m 644 pbswebmon.conf $(DESTDIR)/etc/pbswebmon.conf
 	install -m 644 README $(DESTDIR)/usr/share/doc/pbswebmon/README
-	
+
 
 dist:	
 	rm -rf pbswebmon-$(VERSION)
@@ -35,9 +34,6 @@ dist:
 	sed -e "s/@VERSION@/$(VERSION)/" pbswebmon.spec.in > pbswebmon-$(VERSION)/pbswebmon-$(VERSION).spec
 	tar cvzf pbswebmon-$(VERSION).tar.gz pbswebmon-$(VERSION)
 	rm -rf pbswebmon-$(VERSION)
-
-tag:
-	svn cp $(SVNURL)/trunk $(SVNURL)/tags/pbswebmon-$(VERSION)/
 
 
 rpm: dist

@@ -7,7 +7,7 @@ License: other
 Group: Application
 Source: pbswebmon-@VERSION@.tar.gz
 URL: dsds
-Packager: childss@cs.tcd.ie
+Packager: mbreese@iupui.edu
 BuildRoot: %{_tmppath}/%{name}-%{version}-rootA
 BuildArch:  noarch
 Requires: pbs_python
