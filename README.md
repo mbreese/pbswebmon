@@ -22,9 +22,8 @@ RPM
 ---
 Run `make rpm` to build an installable RPM file.
 
-PBS note
+PBS Note
 ---
-
-Note: Make sure that your PBS server is setup to allow querying of other people's jobs. Otherwise, you'd only see the jobs for the user your webserver runs under.
+Make sure that your PBS server is setup to allow querying of other people's jobs. Otherwise, you'd only see the jobs for the user your webserver runs under.
 
 `qmgr -c "set server query_other_jobs = True"`
