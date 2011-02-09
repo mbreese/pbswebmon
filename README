@@ -1,0 +1,15 @@
+Depends on pbs_python (RPM for SL4/Torque 2 available at 
+http://grid.ie/distribution/clustermon).
+
+Should be able to run either on the PBS head node, or a 
+separate machine authorised as a client of the head node. 
+(To configure the server address, edit the configuration
+file /etc/pbswebmon.conf)
+
+= Manual installation =
+
+Put cgi-bin/pbswebmon.py into your CGI directory.
+
+Put the js and css files in a directory called pbswebmon under your web root.
+
+(The RPM install will put the files in these locations.)

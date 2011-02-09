@@ -1,0 +1,121 @@
+table.fieldsel {
+/*    border:1px solid black;*/
+    border-collapse:collapse;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:lightgray;
+}
+
+table.fieldsel td, table.fieldsel th {
+    padding-right:30px;
+}
+
+
+.job-exclusive {
+
+    background-color:Lime;
+}
+
+.partfull {
+
+    background-color:#C3FDB8;
+}
+
+.jobdata {
+    white-space:pre;
+    font-size:0.7em;
+    font-family:monospace;
+    padding:0px;
+}
+
+.down {
+    background-color:red;
+}
+
+.offline {
+   background-color:gray;
+}
+
+
+table.key_table, table.key_table td {
+   font-size:0.7em;
+   border:1px solid #aaaaaa;
+   border-collapse:collapse;
+   margin-top:20px;
+}
+
+form.showdetails {
+   margin-top:20px;
+}
+
+form {
+    padding:0px;
+    margin-bottom:0px;
+
+}
+
+table.queue_summary {
+   font-size:0.7em;
+/*   float:right;*/
+}
+
+table.node_summary {
+   font-size:0.7em;
+/*   margin-left:auto;
+   margin-right:auto;*/
+}
+
+table.user_summary {
+   font-size:0.7em;
+
+}
+div.summary_box {
+   position:fixed;
+   height:350px;
+   /*overflow:auto;*/
+   width:100%; 
+   background-color:white;
+  z-index:1000;
+
+   width:100%; 
+ 
+
+
+}
+table.summary_box_table {
+   vertical-align:top;
+   border-spacing:50px 0px;
+   margin-left:auto;
+   margin-right:auto;
+   padding-bottom:50px;
+   margin-top:-10px;
+   background-color:white;
+   padding-top:10px;
+   width:100%;
+}
+table.node_grid {
+   top:450px;
+   position:absolute;
+   margin-left:auto;
+   margin-right:auto;
+/*   border-collapse:collapse; */
+/*   border:solid 1px;*/
+}
+
+
+table.node_grid td             { 
+   border:1px solid #aaaaaa;
+   padding: 2px 15px 2px 15px;
+
+}
+
+.summary_box_entry {
+   vertical-align:top;
+   
+
+}
+
+
+caption {
+    font-weight:bold;
+}
